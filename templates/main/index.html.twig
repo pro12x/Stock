@@ -1,0 +1,83 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block body %}
+
+    {# {% block card %} #}
+        <div class="mt-2 p-2 text-primary text-center">
+            <h1>Welcome to the Dashboard</h1>
+            <p>This part gives you an overview of the system's activities</p>
+        </div>
+        <div class="row">
+            <div class="card border-secondary mb-3 col-4">
+                <div class="card-header text-center">Product</div>
+                <div class="card-body">
+                    <h4 class="card-title text-center">Summary</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Input
+                            <span class="badge rounded-pill bg-secondary">144</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Output
+                            <span class="badge rounded-pill bg-secondary">144</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Stock
+                            <span class="badge rounded-pill bg-secondary">0</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer text-end">
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                </div>
+            </div>
+            <div class="card text-white bg-info mb-3 col-4">
+                <div class="card-header text-center">Category</div>
+                <div class="card-body">
+                    <h4 class="card-title text-center">Summary</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Total
+                            <span class="badge rounded-pill bg-primary">144</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer text-end">
+                    <a class="btn btn-outline-dark btn-sm" href="#">View</a>
+                </div>
+            </div>
+            <div class="card bg-secondary mb-3 col-4">
+                <div class="card-header text-center">Role</div>
+                <div class="card-body">
+                    <h4 class="card-title text-center">Summary</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Total
+                            <span class="badge rounded-pill bg-secondary">3</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer text-end">
+                    <a class="btn btn-outline-primary btn-sm" href="#">View</a>
+                </div>
+            </div>
+            <div class="card text-white bg-success mb-3 col-4">
+                <div class="card-header text-center">User</div>
+                <div class="card-body">
+                    <h4 class="card-title text-center">Summary</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Total
+                            <span class="badge rounded-pill bg-success">12</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer text-end">
+                    <a class="btn btn-outline-secondary btn-sm" href="#">View</a>
+                </div>
+            </div>
+        </div>
+    {# {% endblock %} #}
+{% endblock %}
